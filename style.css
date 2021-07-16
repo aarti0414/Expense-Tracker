@@ -111,3 +111,13 @@ input[type="submit"]:hover{
 .signup_link a:hover{
   text-decoration: underline;
 }
+
+
+/* -----------toast notification */
+.toast {
+  background-color: rgb(6, 228, 36);
+  border-radius: 5px;
+  color: #fff;
+  padding: 2rem;
+  margin: 1rem;
+}
