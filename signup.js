@@ -31,7 +31,7 @@ function signup(e) {
             alert('Successfully Registered!');
             // createNotification();
             // setTimeout(()=>{
-                window.location.href = "index.html" // change the page on successful login
+                window.location.href = "login.html" // change the page on successful login
 
             // },3000);
         }
