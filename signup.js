@@ -28,16 +28,19 @@ function signup(e) {
     e.preventDefault();
     axios.post('http://localhost:3000/user/signup',signupDetails).then(response => {
         if(response.status === 201){
-            createNotification();
-            setTimeout(()=>{
+            alert('Successfully Registered!');
+            // createNotification();
+            // setTimeout(()=>{
                 window.location.href = "index.html" // change the page on successful login
 
-            },3000);
-        } else {
-            throw new Error('Failed to login')
+            // },3000);
+        }
+       else {
+            alert('Something went wrong');
         }
     }).catch(err => {
-        document.body.innerHTML += `<div style="color:red;">${err} <div>`;
+        alert('User Already Exist! Please Login.');
+        // document.body.innerHTML += `<div style="color:red;">${err} <div>`;
     })
 }
 
