@@ -16,9 +16,22 @@ function login(e) {
             localStorage.setItem('userDetails', JSON.stringify(response.data.user))
             window.location.href = "index.html" // change the page on successful login
         } else {
+            createNotification('failed to login!');
             throw new Error('Failed to login')
         }
     }).catch(err => {
+            createNotification('Password doesnot match');
         document.body.innerHTML += `<div style="color:red;">${err} <div>`;
     })
+}
+function createNotification(text) {
+    const container = document.getElementById("container");
+    const notif = document.createElement("div");
+    notif.classList.add("toast");
+    notif.innerText = text;
+
+    container.appendChild(notif);
+    setTimeout(() => {
+        notif.remove();
+    }, 3000);
 }
