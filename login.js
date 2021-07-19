@@ -20,7 +20,7 @@ function login(e) {
             throw new Error('Failed to login')
         }
     }).catch(err => {
-            createNotification('Password doesnot match');
+        createNotification('Password doesnot match');
         document.body.innerHTML += `<div style="color:red;">${err} <div>`;
     })
 }
@@ -33,5 +33,5 @@ function createNotification(text) {
     container.appendChild(notif);
     setTimeout(() => {
         notif.remove();
-    }, 3000);
+    }, 2000);
 }

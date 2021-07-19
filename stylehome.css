@@ -75,6 +75,10 @@ body {
     font-weight: 700;
 }
 
+.btn-expense-type{
+    background-color: linear-gradient(#0277BD, #846bf7);
+    background-color: cornflowerblue;
+}
 .bottom-border {
     border-bottom: 1px solid #00446D;
 }
@@ -92,6 +96,7 @@ body {
 }
 
 .expense-list {
+    overflow-x: scroll;
     overflow-y: scroll;
 }
 
@@ -100,7 +105,19 @@ body {
 }
 
 .expense-value {
-    text-align: end;
+    text-align:center;
+} 
+
+.expense-btn{
+    color: #f8f8f8;
+    text-align:center;
+    border-radius: 5px;
+    border-color: #E40000;
+    background-color: #f54848;
+}
+.expense-btn:hover{
+    border-color: #f1eded;
+    background-color: #e91111;
 }
 
 .expense-saving {

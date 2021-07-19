@@ -41,8 +41,8 @@
                         <a class="dropdown-item" id="type-expense">Expense</a>
                         <a class="dropdown-item" id="type-investment">Investment</a>
                     </div> -->
-                    <label for="category">Expense Type</label>
-                    <select name="category" id="category" value="expense Type">
+                    <label for="category">Expense Type : </label>
+                    <select name="category" class="btn btn-secondary dropdown-toggle btn-info" id="category" value="expense Type">
                         <option value="Savings">Savings</option>
                         <option value="Expenses">Expenses</option>
                         <option value="Investments">Investments</option>
@@ -52,16 +52,24 @@
     
                 <div class="row mt-4">
                     <div class="col-7">
-                        <input name = "description"class="form-control input-expense-description" type="text" placeholder="Description">
+                        <input  name = "description" id="descId" class="form-control input-expense-description" type="text" placeholder="Description">
                     </div>
                     <div class="col-4">
-                        <input name ="expenseAmount"class="form-control input-expense-value" type="number" placeholder="Value">
+                        <input  name ="expenseAmount" id="valueId" class="form-control input-expense-value" type="number" placeholder="Value">
                     </div>
                     <div class="col-1">
                         <button type="submit" class="btn btn-success btn-submit-expense">&check;</button>
                     </div>
                 </div>
                 <div class="expense-list mt-4">
+                    <div id="listofExpense">
+                        <p>inside expense List</p>
+                        <div class="row expense-row">
+                            <div class="col-2 expense-date fs-15">Date</div>
+                            <div class="col-5 expense-text fs-15">Description</div>
+                            <div class="col-2 expense-value expense-saving fs-15"> Amount </div>
+                        </div>
+                    </div>
     
                 </div>
     
